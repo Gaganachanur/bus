@@ -1,30 +1,40 @@
-*{
-
-  background-color: rgb(242, 248, 238);
-
-}
-.signup{
-  margin: 100px;
-}
-.box{
-  border: black;
  
-  
-  
+sfsdf
+* {
+	background-color: rgb(240, 245, 239);
 }
-.login{
-  font-size:20px;
-  width:100% ;
-  max-width: 330px;
-  padding:15px;
-  margin: auto;
-  height : 100%;
+
+
+.peace{
   
-  
+  margin-top: 20px;
 }
-.button{
-  width: 300px;
-  color: aqua;
-  background-color: black;
- 
+
+
+
+
+.signup {
+	background-color: rgb(193, 137, 245);
+	font-size: 20px;
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: 0% 0px 10% 40%;
+	height: 50%;
+}
+
+.login {
+	background-color: rgb(193, 137, 245);
+	font-size: 20px;
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: 0% 0px 10% 40%;
+	height: 50%;
+}
+
+.button {
+	width: 300px;
+	color: aqua;
+	background-color: black;
 }

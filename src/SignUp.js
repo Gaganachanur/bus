@@ -9,24 +9,26 @@ export default class SignUp extends React.Component{
     render()
     {
         return (
-        <div className="signup" align="center">
-            
-        <label>First Name </label>&nbsp;  <input type="text"/> 
-        <br/>  <br/>
-         <label>Last Name </label>&nbsp; <input type="text"/> <br/>  <br/>
-         <label>User Id </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <input type="text"/> <br/><br/>
-        
-          <lable>Password</lable>&nbsp;&nbsp;&nbsp;&nbsp;<input type="password"/>
-          <br/><br/>
-          <lable>conform </lable>&nbsp;&nbsp;&nbsp;&nbsp;<input type="password"/>
-          <br/><br/>
-          <lable>Phone </lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number"/>
-          <br/><br/>
-
-         <button> SIGN UP</button>
-         
-        </div>
+            <div className="peace">
+            <div className="signup" align="center">
+            <Form >
+               <Label>First Name </Label>&nbsp;  <Input type="text" required/> 
+               <br/>  <br/>
+               <Label>Last Name </Label>&nbsp; <Input type="text" required/> 
+               <br/>  <br/>
+               <Label>User Id </Label>
+               <Input type="text" required/> <br/><br/>
+               <Label>Password</Label><Input type="password" required/>
+               <br/><br/>
+              
+               <Label>Phone </Label><Input type="tel" required/>
+               <br/><br/>
+               <button className="button"> SIGN UP</button>&nbsp;&nbsp;&nbsp;&nbsp;
+               <Link to="/">
+               <button className="button" > LOG IN</button></Link>
+            </Form>
+         </div>
+         </div>
     
         );        
      
