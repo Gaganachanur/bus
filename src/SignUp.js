@@ -24,8 +24,7 @@ export default class SignUp extends React.Component{
                <Label>Phone </Label><Input type="tel" required/>
                <br/><br/>
                <button className="button"> SIGN UP</button>&nbsp;&nbsp;&nbsp;&nbsp;
-               <Link to="/">
-               <button className="button" > LOG IN</button></Link>
+               <Link to="/"><button className="button" > LOG IN</button></Link>
             </Form>
          </div>
          </div>

@@ -38,3 +38,109 @@ sfsdf
 	color: aqua;
 	background-color: black;
 }
+
+.HomeNav{
+	background-color: rgb(0, 0, 0);
+}
+.input{
+	margin: 30px;
+	height: 50px;
+	width :400px;
+	font-size: 25px;
+}
+
+.labelTHB{
+ margin-left: 10px;
+	font-size: 25px;
+}
+.labelFHB{
+	margin-left: 10px;
+	font-size: 25px;
+}
+.HBsearch{
+	margin-left: 50px;
+	height: 60px;
+	width: 100px;	
+}
+.cards{
+	background-color: rgb(209, 20, 20);
+	margin: 100px;
+	padding: 50;
+}
+
+
+.card1{
+	margin: 20px;
+	width: 250px;
+}
+.card2{
+	margin: 20px;
+	width: 250px;
+}
+.card3{
+	margin: 20px;
+	width: 250px;
+}
+.sliderimg1{
+	height:500px;
+	width: 100%;
+	
+}
+.sliderimg2{
+	height:500px;
+	width: 100%;
+
+}
+.sliderimg3{
+	height:500px;
+	width: 100%;
+
+}
+.card1{
+
+	height: 300px;
+	width: 400px;
+
+}
+.card2{
+
+	height: 300px;
+	width: 400px;
+
+}
+.card3{
+
+	height: 300px;
+	width: 400px;
+
+
+}
+
+.Footer{
+	background-color: rgb(1, 15, 11);
+	height: 500px;
+	margin-top: 250px;
+}
+.about{
+	margin:100px;
+}
+.businsideimg{
+	
+	margin: 130px;
+	
+}
+.facilities{
+	margin: 100px;
+	
+}
+.busimage{
+	margin: 100px;
+}
+.review1{
+	margin: 50px;
+}
+.review2{
+	margin: 50px;
+}
+
+
