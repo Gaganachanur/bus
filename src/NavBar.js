@@ -40,7 +40,7 @@ import {Link} from 'react-router-dom';
          <NavLink>About </NavLink>
          </NavItem>
          <NavItem>
-            <NavLink  href="https://github.com/Gagan720602/bus.git">GitHub</NavLink>
+            <NavLink target="blank" href="https://github.com/Gagan720602/bus.git">GitHub</NavLink>
          </NavItem>
          <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
