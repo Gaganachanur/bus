@@ -7,17 +7,22 @@ import Footer from './Footer';
 import Map from './Map';
 
 
+
+
 export default  class HomePage extends React.Component{
 
     render(){
         return(<>
-
+     
         <NavBar/>
         <Slider/>
         <Customer/>
         <Cards/>
          <Map/>
         <Footer/>
+        
+       
+        
 
   </>);
     }

@@ -14,6 +14,7 @@ import {
     DropdownItem,
     NavbarText
   } from 'reactstrap';
+  
 
 import {Link} from 'react-router-dom';
 
@@ -36,7 +37,7 @@ import {Link} from 'react-router-dom';
       
       <Nav className="mr-auto" navbar>
          <NavItem>
-            <NavLink href="/components/">Components</NavLink>
+         <NavLink>About </NavLink>
          </NavItem>
          <NavItem>
             <NavLink  href="https://github.com/Gagan720602/bus.git">GitHub</NavLink>

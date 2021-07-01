@@ -1,9 +1,11 @@
 import React,{useState} from 'react';
 import { Button } from 'reactstrap';
 import BookNavbar from './BookNavbar';
+import InfoTable from './Infotable';
+import Footer from './Footer';
 
 
-import InfoTable from './Infotable'
+
 
 
 const BookTickets = () =>{
@@ -26,6 +28,10 @@ function to(event) {
     <div >
     
     <BookNavbar/>
+   
+    
+    
+  
        
 <label style={{color:'BLUE'}} className="labelFHB">FROM :</label>
 <select style={{color:'GREEN' , border:'5px'}} onChange={from} className="input">
@@ -49,8 +55,11 @@ function to(event) {
   
  <h4 style={{color:'green'}}>From: {data} -> To : {todata} </h4> <br/>
 
-
+  
  <InfoTable/>
+
+<Footer/>
+ 
 
   </div>   
     )

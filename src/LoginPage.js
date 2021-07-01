@@ -5,6 +5,39 @@ import {  FormGroup , Label, Input} from 'reactstrap';
 
 export default class LoginPage extends React.Component{
 
+//   state={
+//     USERId:"",
+//     PASS :""
+//   };
+
+// handelevent =(e,attribute) =>{
+//   this.setState({[attribute]:e.target.value})
+  
+//};
+
+//  submitLogin =() => {
+
+// fetch('https://example.com/profile', {
+//   method: 'POST', // or 'PUT'
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+//   body: JSON.stringify({
+
+//     USERId:this.state.USERId,
+//     password:this.state.PASS
+//   }),
+// })
+// .then(response => response.json())
+// .then((data) => {
+//   console.log('Success:', data);
+// })
+// .catch((error) => {
+//   console.error('Error:', error);
+// });
+//  }
+
+
 render(){
     return (
       <>
@@ -22,15 +55,15 @@ render(){
         <br/>
        
 
-        <Input type="text" placeholder="Enter user Id"/>
+        <Input type="text" placeholder="Enter user Id" onChange={(e)=>this.handelevent(e,"userId")}/>
 
         <br/><br/>
 
         <Label><strong>PASSWORD</strong></Label>
         <br/>
-        <Input type="password" placeholder="Enter password"/>
+        <Input type="password" placeholder="Enter password" onChange={(e)=>this.handelevent(e,"PASS")}/>
         <br/><br/>
-        <Link to="./HomePage"><button className="button">LOG IN</button></Link>
+        <Link to="./HomePage"><button className="button"  onClick={this.submitLogin}>LOG IN</button></Link>
         <br/><br/>
         
         <Link to="./SignUp">sign up ?</Link>

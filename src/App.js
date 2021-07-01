@@ -7,6 +7,8 @@ import HomePage from './HomePage';
 import BookTickets from './BookTickets';
 
 
+
+
 function App() {
   return (
     <div >
@@ -17,7 +19,9 @@ function App() {
       <Route exact path='/' component={LoginPage}/> 
       <Route exact path ="/SignUp" component={SignUp}/>
       <Route exact path ="/HomePage" component={HomePage}/>
-      <Route exact path = "/BookTickets" component={BookTickets}/>  
+      <Route exact path = "/BookTickets" component={BookTickets}/> 
+    
+      
        </Switch>
        </BrowserRouter>
         </div>
