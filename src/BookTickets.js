@@ -2,7 +2,12 @@ import React,{useState} from 'react';
 import { Button } from 'reactstrap';
 import BookNavbar from './BookNavbar';
 import InfoTable from './Infotable';
-import Footer from './Footer';
+import BTFooter from './BTFooter.js';
+
+
+
+
+
 
 
 
@@ -53,15 +58,16 @@ function to(event) {
  <Button  className="HBsearch"color="primary" size="lg"   active>search</Button>
 
   
- <h4 style={{color:'green'}}>From: {data} -> To : {todata} </h4> <br/>
+ <h4 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small>From:&nbsp;&nbsp;&nbsp;</small> <strong style={{color:'blue'}}>{data}</strong>&nbsp;&nbsp;&nbsp; --><small> To :&nbsp;&nbsp;&nbsp; </small><strong  style={{color:'blue'}}> {todata}</strong> </h4> <br/>
 
   
  <InfoTable/>
 
-<Footer/>
  
+<BTFooter/>
+   
 
-  </div>   
+</div>   
     )
 
     

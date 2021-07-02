@@ -1,6 +1,6 @@
 import React ,{useState} from 'react';
 import {Modal , Button} from 'react-bootstrap';
-
+import UpdateProfile from './UpdateProfile';
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -12,13 +12,11 @@ function MyVerticallyCenteredModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          <h4>Discount Coupon</h4>
+          <h4>Profile</h4>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        
-          <h3> Sorry no offer as of now </h3>
-          <h5> betterluck next time :)</h5>
+        <UpdateProfile/>
          
         </Modal.Body>
         <Modal.Footer>
@@ -34,7 +32,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button variant="primary" onClick={() => setModalShow(true)}>
-          offer cupon 
+         Update Profile
         </Button>
   
         <MyVerticallyCenteredModal
