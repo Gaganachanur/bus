@@ -4,15 +4,6 @@ import BookNavbar from './BookNavbar';
 import InfoTable from './Infotable';
 import BTFooter from './BTFooter.js';
 
-
-
-
-
-
-
-
-
-
 const BookTickets = () =>{
     const [data , setData] =useState(null)
     const [todata, setTodata] =useState(null)

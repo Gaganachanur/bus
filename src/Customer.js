@@ -53,7 +53,7 @@ const Customer = () =>{
 				<br/>
 				<h5>I have very Memorable  travel exprience with Adventure travels when we went to delhi later Himalaya,
                               I like to thank you for making our journey so special . </h5> 
-                              <img height ="100px" src="https://lh3.googleusercontent.com/proxy/uIImJTAJFe0NXpjJTK2qlnZGihesb5Bs63TNZ4xld-KJ5gZ35y061KgnT30IrKuaLn0zw-nFvMJWeJxH6dHi_0i33NDykS010vf3N6hDcrpi0q8846xPFA"/>
+                              <img height ="150px" src="https://i1.wp.com/www.applehouse.co.uk/wp-content/uploads/2015/07/screen-shot-2015-07-09-at-15-10-11.png"/>
 
 
                  </div>
@@ -67,7 +67,7 @@ const Customer = () =>{
                      </Col><br/>
                      <h5>My journey was Delightful I enjoyed with my Grandchildren throught the journey I was impressed by the facility and safety measures
                           given to old age citizens and also childrens.   </h5> 
-                              <img height ="100px" src="https://lh3.googleusercontent.com/proxy/uIImJTAJFe0NXpjJTK2qlnZGihesb5Bs63TNZ4xld-KJ5gZ35y061KgnT30IrKuaLn0zw-nFvMJWeJxH6dHi_0i33NDykS010vf3N6hDcrpi0q8846xPFA"/>
+                              <img height ="150px" src="https://i1.wp.com/www.applehouse.co.uk/wp-content/uploads/2015/07/screen-shot-2015-07-09-at-15-10-11.png"/>
           </div>
           
        

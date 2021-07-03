@@ -17,8 +17,9 @@ export default class SignUp extends React.Component {
     this.setState({ [attribute]: e.target.value }); 
   };
 
-  submitForm = async() => {
-   await fetch(" http://localhost:3000/signup", {
+  submitForm = () => {
+    alert('sucessfully regesterd')
+  fetch(" http://localhost:3000/signup", {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
@@ -52,9 +53,9 @@ export default class SignUp extends React.Component {
             <Label>First Name </Label>&nbsp;{" "}
             <Input
               type="text"
-              required
+          
               onChange={(e) => this.handleOnChangeInput(e, "firstName")}
-            />
+              required/>
             <br /> <br />
             <Label>Last Name </Label>&nbsp;{" "}
             <Input
@@ -105,11 +106,13 @@ export default class SignUp extends React.Component {
             <br />
             
           </Form>
-
+           
           <button className="button" onClick={this.submitForm}>
             {" "}
             SIGN UP
-          </button>
+          </button><br />
+            <br />
+            
           <Link to="/">
               <button className="button"> LOG IN</button>
             </Link>
