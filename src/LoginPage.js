@@ -35,14 +35,13 @@ fetch('http://localhost:3000/login', {
 .then((data) => {
 	
   console.log('Success:', data);
-  console.log(data.rowCount)
-  if(data.rowCount === 0)
-  {
-    alert('check your user id and password and login again')
-  }else{
+  let id=data.rows[0].user_id;
+  let pass= data.rows[0].password; 
+
+  if(id.length >0 && pass.length>0 ){
 	this.setState({redirect:true})
-	
-  }
+  } else{ alert(' Please check your user id and password ')}
+
 })
 .catch((error) => {
   console.error('Error:', error);

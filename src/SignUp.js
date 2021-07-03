@@ -18,7 +18,7 @@ export default class SignUp extends React.Component {
   };
 
   submitForm = () => {
-    alert('sucessfully regesterd')
+    alert('sucessfully regesterd please click on LOG IN and log In ')
   fetch(" http://localhost:3000/signup", {
       method: "POST", // or 'PUT'
       headers: {
