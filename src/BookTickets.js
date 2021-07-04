@@ -96,17 +96,17 @@ let price= JSON.stringify(fare)
     <BookNavbar/>     
 <label style={{color:'BLUE'}} className="labelFHB">FROM :</label>
 <select style={{color:'GREEN' , border:'5px'}} onChange={from} className="input">
-<option >HYDERABAD</option>
+<option >Hyderabad</option>
   <option >Banglore</option>
   <option >Mumbai</option>
-  <option >DELHI</option>
+  <option >Delhi</option>
 </select>
 
 <label style={{color:'BLUE'}} className="labelTHB">DESTINATION : </label>
 <select style={{color:'GREEN' , border:'5px' , borderColor:'black'}} onChange={to}  className="input">
-<option  className="HBoptions">BANGLORE</option>
-  <option>HYDERABAD</option>
-  <option >DELHI</option>
+<option  className="HBoptions">Banglore</option>
+  <option>Hyderabad</option>
+  <option >Delhi</option>
   <option>Mumbai</option>
 </select>
 
