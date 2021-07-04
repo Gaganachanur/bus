@@ -1,7 +1,10 @@
 import React from 'react';
 import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 
-export default function App() {
+
+
+
+export default function App(props) {
   return (
     <MDBTable striped>
       <MDBTableHead>
@@ -18,7 +21,7 @@ export default function App() {
       </MDBTableHead>
       <MDBTableBody>
         <tr>
-          <th scope='row'>1</th>
+          <th scope='row'></th>
           <td>Banglore</td>
           <td>delhi</td>
           <td>Peace bus</td>
