@@ -1,55 +1,74 @@
-import React from 'react';
-import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
+import React, { Component } from 'react'
+
+export default class InfoTable extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      users: [],
+      isLoading: false,
+      isError: false
+    }
+  }
 
 
+  async componentDidMount() {
+    this.setState({ isLoading: true })
+    const response = await fetch('http://localhost:3000/loc')
+    if (response.ok) {
+      const users = await response.json()
+      this.setState({ users, isLoading: false })
+    } else {
+      this.setState({ isError: true, isLoading: false })
+    }
+  }
+  renderTableHeader = () => {
+    return Object.keys(this.state.users[0]).map(attr => <th key={attr}>{attr.toUpperCase()}</th>)
+  }
 
+  renderTableRows = () => {
+    return this.state.users.map(user => {
+      return (
+        <tr key={user.bus_no}>
+          <td>{user.source}</td>
+          <td>{user.desti}</td>
+          <td>{user.bus_name}</td>
+          <td>{user.departure}</td>
+          
+          <td>{user.rating}</td>
+          <td>{user.seats}</td>
+          <td>{user.fare}</td>
+        </tr>
+      )
+    })
+  }
+  render() {
+    const { users, isLoading, isError } = this.state
 
-export default function App(props) {
-  return (
-    <MDBTable striped>
-      <MDBTableHead>
-        <tr>
-          <th scope='col'>Buses</th>
-          <th scope='col'>source</th>
-          <th scope='col'>destination</th>
-          <th scope='col'>Bus Name</th>
-          <th scope='col'>Departure</th>
-          <th scope='col'>Duration</th>
-          <th scope='col'>Ratings</th>
-          <th scope='col'>Fare</th>
-        </tr>
-      </MDBTableHead>
-      <MDBTableBody>
-        <tr>
-          <th scope='row'></th>
-          <td>Banglore</td>
-          <td>delhi</td>
-          <td>Peace bus</td>
-          <td>12:00 am</td>
-          <td>6h15min</td>
-          <td>4.5</td>
-          <td>450/-</td>
-        </tr>
-        <tr>
-          <th scope='row'>2</th>
-          <td>Banglore</td>
-          <td>Delhi</td>
-          <td>Dulex bus</td>
-          <td>01:00 am</td>
-          <td>5h30min</td>
-          <td>4</td>
-          <td>400/-</td>
-        </tr>
-        <tr>
-          <th scope='row'>3</th>
-          <td colSpan={2}>Banglore</td>
-          <td>ultra A/C bus</td>
-          <td>12:30min</td>
-          <td>6h10min</td>
-          <td>3.7</td>
-          <td>500/-</td>
-        </tr>
-      </MDBTableBody>
-    </MDBTable>
-  );
+    if (isLoading) {
+      return <div>Loading...</div>
+    }
+
+    if (isError) {
+      return <div>Error</div>
+    }
+
+    return users.length > 0
+      ? (
+        <table>
+          <thead>
+            <tr>
+              {this.renderTableHeader()}
+            </tr>
+          </thead>
+          <tbody>
+            {this.renderTableRows()}
+          </tbody>
+        </table>
+      ) : (
+        <div>
+          No users.
+      </div>
+      )
+  }
+
 }

@@ -40,6 +40,8 @@ fetch('http://localhost:3000/login', {
 
   if(id.length >0 && pass.length>0 ){
 	this.setState({redirect:true})
+	// let store  userid in local storage or react store
+	// if login ( key :true) else (key :false)
   } else{ alert(' Please check your user id and password ')}
 
 })

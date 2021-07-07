@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Form, Label, Input } from "reactstrap";
+import { Form, Label, Input ,Button} from "reactstrap";
 
 export default class SignUp extends React.Component {
   state = {
@@ -104,13 +104,13 @@ export default class SignUp extends React.Component {
               onChange={(e) => this.handleOnChangeInput(e, "gender")}/>
             <br />
             <br />
-            
-          </Form>
-           
-          <button className="button" onClick={this.submitForm}>
+            <button className="button" onClick={this.submitForm}>
             {" "}
             SIGN UP
-          </button><br />
+          </button>
+          </Form>
+           
+          <br />
             <br />
             
           <Link to="/">
