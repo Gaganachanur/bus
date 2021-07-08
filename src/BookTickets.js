@@ -4,6 +4,8 @@ import BookNavbar from './BookNavbar';
 import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import BTFooter from './BTFooter.js';
 
+import Book from './Book.js'
+
 
 
 // ----------------------------------------------------------------------------------------------------------
@@ -12,6 +14,10 @@ const BookTickets = () =>{
     const [todata, setTodata] =useState(null)
     const [info ,setInfo] =useState([])
     const [abus ,setAbus]  =useState(0)
+
+  
+
+
   
  const location   =() => {
 
@@ -34,13 +40,7 @@ const BookTickets = () =>{
           setAbus(data.rowCount)
          
           setInfo(data.rows)
-
-         
-       
-          
-            
-       
-         
+  
         })
         .catch((error) => {
           console.error('Error:', error);
@@ -91,19 +91,16 @@ function to(event) {
  <MDBTable>
       <MDBTableHead>
       <tr>
-          <th style={{color:'red'}} >Buses</th>
+          <th style={{color:'red'}} >Buses no</th>
           <th style={{color:'red'}} >source</th>
-          <th style={{color:'red'}}>destination</th>
+          <th style={{color:'red'}}>Destination</th>
           <th style={{color:'red'}}>Bus Name</th>
           <th style={{color:'red'}}>Departure</th>
           <th style={{color:'red'}}>Duration</th>
           <th style={{color:'red'}}>Ratings</th>
           <th style={{color:'red'}}>Seats</th>
-          <th style={{color:'red'}}>Fare</th>
-         
-       
-
-          </tr>
+          <th style={{color:'red'}}>Fare </th>
+      </tr>
         
       </MDBTableHead>
       <MDBTableBody> 
@@ -212,18 +209,16 @@ function to(event) {
               })
             }
           </td>
-
-        
-          
-            
-        
-       
-
-       
       </MDBTableBody>
     </MDBTable>
+
+{/* ==================================================================================================================================================== */}
     
-    {/* <InfoTable/> */}
+
+    <Book/>
+
+    
+  
 <BTFooter/>
    
 
