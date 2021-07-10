@@ -10,7 +10,7 @@ const BookNavbar = () =>{
     return (<>
         
         <Navbar bg="primary" variant="dark">
-        <Navbar.Brand ><img  height="70px "src="https://cdn.dribbble.com/users/1146489/screenshots/4574689/hello_behance.jpg?compress=1&resize=400x300" /></Navbar.Brand> 
+        <Navbar.Brand ><img  height="70px "src="https://upload.wikimedia.org/wikipedia/commons/2/28/Logo_do_Blue_Bus.jpg" /></Navbar.Brand> 
           <Nav className="mr-auto">
           <Link to='/HomePage'><Nav.Link href="#home">Home</Nav.Link> </Link>
             <Nav.Link ><Help/></Nav.Link>

@@ -59,7 +59,7 @@ render(){
 	}
     return (
       <>
-          <div className="body"> <img height="110px" width="150px" src="https://www.clipartkey.com/mpngs/m/13-134167_bus-clipart-logo-highway-bus-cartoon-logo.png" />
+          <div className="body"> <img height="110px" width="150px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsUr6MwutUnsM_Jyw9oFBTOtNDTjoY0YxYjPybt10f0MR8MS_AGB8u6cGqPqp-yLc4lr0&usqp=CAU" />
 	<h2 align='center' style={{color:'red'}}> WELCOME TO </h2>
 	<h1 align='center' style={{color:'red'}}>ADVENTURE Travels</h1>
 	<FormGroup className="login" align="center">

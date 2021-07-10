@@ -58,15 +58,15 @@ export default class BTFooter extends React.Component{
                            <h3>social media</h3>
                            &nbsp;&nbsp;&nbsp;<br/>
                            
-                           <img  height="50px "src="https://thumbs.dreamstime.com/b/glowing-neon-line-bus-icon-isolated-blue-background-transportation-concept-tour-transport-sign-tourism-public-vehicle-symbol-213246949.jpg" /><br/><br/>
+                           <img  height="50px "src="https://www.logolynx.com/images/logolynx/3c/3cb78bf86ef1bd58be3041f602b6ec56.jpeg" /><br/><br/>
                             <img height="25px" src="https://jobsy.co.in/src/assets/images/jobsy-logo-new-0897726b88ce6973b7bf9d476e267505.png" /><br/><br/>
-                            <img height="50px" src={facebook}/>
+                            <img height="50px" src="https://i.pinimg.com/564x/d2/69/3d/d2693d5bb38c92a8a68f1f60fec74177.jpg"/>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <img height="50px" src={youtube}/>
+                            <img height="50px" src="https://cdn1.iconfinder.com/data/icons/metro-ui-dock-icon-set--icons-by-dakirby/512/YouTube.png"/>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                              <img height="30px" src="https://www.pinclipart.com/picdir/big/51-512064_homeabout-meblogcontact-linkedin-icon-png-black-square-clipart.png"/>
                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <img height="30px" src='https://assets.dragoart.com/images/13143_501/how-to-draw-twitter-draw-the-twitter-logo_5e4ca489789dc0.44078033_59530_3_3.png'/>
+                            <img height="30px" src='https://placng.org/Legist/wp-content/uploads/2021/06/Twitter-Revenue.png'/>
                            </div>
                        </div>
                    </div>

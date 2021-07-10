@@ -103,7 +103,7 @@ const Bookinformation =() => {
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
+          <Modal.Title>BOOK TICKETS</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           
@@ -147,10 +147,10 @@ const Bookinformation =() => {
 
   
    <br/><br/>
-  <Button variant="primary"  onClick={Bookinformation}>
+  <Button variant="danger"  onClick={Bookinformation}>
     Book Tickets
   </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <Button variant="primary"  onClick={BookTics}>
+  <Button variant="warning"  onClick={BookTics}>
     Confirm Tickets
   </Button>
 </Form>
@@ -160,7 +160,7 @@ const Bookinformation =() => {
 
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="info" onClick={handleClose}>
             Close
           </Button>
         

@@ -27,7 +27,7 @@ const Map =() =>{
 
 
                        <div className="Lastbutton">
-                  <Link to='./BookTickets'  >  <Button  rounded variant="success">BOOK YOUR JOURNEY</Button></Link>
+                  <Link to='./BookTickets'  >  <Button size='lg'  rounded variant="success">BOOK YOUR JOURNEY</Button></Link>
                         </div>
 
         </div>

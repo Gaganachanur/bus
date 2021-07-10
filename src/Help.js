@@ -9,7 +9,7 @@ function Help() {
     return (
       <>
        
-        <Button onClick={() => setLgShow(true)}>Help ?</Button>
+        <Button  variant="light" onClick={() => setLgShow(true)}>Help ?</Button>
      
         <Modal
           size="lg"

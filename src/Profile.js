@@ -31,7 +31,7 @@ function MyVerticallyCenteredModal(props) {
   
     return (
       <>
-        <Button variant="primary" onClick={() => setModalShow(true)}>
+        <Button variant="link" onClick={() => setModalShow(true)}>
          Update Profile
         </Button>
   
