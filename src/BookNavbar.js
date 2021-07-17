@@ -7,7 +7,7 @@ import Help from './Help.js'
 
 const BookNavbar = () =>{
 
-    return (<>
+    return (<div className="booknav">
         
         <Navbar bg="primary" variant="dark">
         <Navbar.Brand ><img  height="70px "src="https://upload.wikimedia.org/wikipedia/commons/2/28/Logo_do_Blue_Bus.jpg" /></Navbar.Brand> 
@@ -18,6 +18,6 @@ const BookNavbar = () =>{
           </Nav>
           
         </Navbar>
-        </>)
+        </div>)
 }
 export default BookNavbar;

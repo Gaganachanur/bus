@@ -41,6 +41,12 @@ sfsdf
 
 .HomeNav{
 	background-color: rgb(0, 0, 0);
+	position: sticky;
+	top: 0%;
+}
+.booknav{
+	position: sticky;
+	top: 0%;
 }
 .input{
 	margin: 30px;
@@ -154,6 +160,7 @@ sfsdf
 .Lastbutton{
 
 	margin-left: 750px;
+	
 }
 .bTFooter{
 	background-color: #1EAFED;
