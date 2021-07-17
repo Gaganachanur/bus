@@ -216,8 +216,8 @@ function to(event) {
     
 
     <Book/>
-
-    
+  
+    <marquee ><img height='200px' src="https://media1.giphy.com/media/YlYvNi3peKT6gsyurj/giphy.gif" /></marquee>
   
 <BTFooter/>
    
